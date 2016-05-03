@@ -9,6 +9,13 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
 
+// var GoogleStrategy   = require('passport-google-oauth').OAuth2Strategy;
+
+
+var passport     = require('passport'), LocalStrategy = require('passport-local').Strategy;
+var Strategy = require('passport-local').Strategy;
+
+
 var morgan       = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
